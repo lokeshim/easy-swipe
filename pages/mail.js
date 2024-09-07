@@ -45,13 +45,13 @@ export default function SelfDeclaration() {
     const mailformat = `
 To whom it may concern,
 
-I hereby confirm that I have done transactions with, C2C Enterprises to load an amount of Rs. ${formData.amount} to carry out utility/product purchase transactions.
+I hereby confirm that I have done transactions with, Easy Swipe to load an amount of Rs. ${formData.amount} to carry out utility/product purchase transactions.
 
-I hereby indemnify C2C Enterprises from any disputes arising in relation to this transaction in the future.
+I hereby indemnify Easy Swipe from any disputes arising in relation to this transaction in the future.
 
-I hereby confirm that I will not raise any chargeback complaint for this transaction given against C2C Enterprises and will not hold C2C Enterprises for any disputes arising from this transaction in the future.
+I hereby confirm that I will not raise any chargeback complaint for this transaction given against Easy Swipe and will not hold Easy Swipe for any disputes arising from this transaction in the future.
 
-I have been serviced by the C2C Enterprises Counter for the purpose it was meant for.
+I have been serviced by the Easy Swipe Counter for the purpose it was meant for.
 
 The amount received in the below account:
 
