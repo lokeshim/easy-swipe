@@ -4,7 +4,7 @@ export const posts = [
       slug: 'credit-card-to-bank-account-transfer',
       title: 'Credit Card to Bank Account Transfer | Easy Swipe Bangalore',
       h1: 'Credit Card to Bank Account Transfer',
-      description:'Credit Card to Bank Account Transfer | Easy Swipe Bangalore',
+      description:'Easy Swipe lets seamless credit card to bank account transfers in Bangalore. Quick, secure, and efficient way to move funds from your card to your bank account.',
       image: '/img/blog1.jpg',
       excerpt: 'In today\'s fast-paced world, having financial flexibility is more important than ever. One of the most convenient ways to achieve this is by utilizing...',
       content: `
@@ -88,8 +88,8 @@ export const posts = [
       `,
     },
     {
-      slug: 'how-cash-against-credit-card-services-can-help-in-financial-emergencies',
-      title: 'How Can I Get Cash From My Credit Card',
+      slug: 'how-can-i-get-cash-from-my-credit-card',
+      title: 'How Can I Get Cash From My Credit Card ',
       h1: 'How Can I Get Cash From My Credit Card',
       description:'Learn how to get cash from your credit card with Easy Swipe. Fast, secure, and easy solutions for accessing funds directly from your credit card. Discover more today!',
       image: '/img/blog4.jpg',
