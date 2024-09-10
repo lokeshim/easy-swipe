@@ -1,8 +1,10 @@
 // data/posts.js
 export const posts = [
     {
-      slug: 'maximizing-financial-flexibility',
-      title: 'Maximizing Financial Flexibility with Credit Card to Bank Transfers',
+      slug: 'credit-card-to-bank-account-transfer',
+      title: 'Credit Card to Bank Account Transfer | Easy Swipe Bangalore',
+      h1: 'Credit Card to Bank Account Transfer',
+      description:'Credit Card to Bank Account Transfer | Easy Swipe Bangalore',
       image: '/img/blog1.jpg',
       excerpt: 'In today\'s fast-paced world, having financial flexibility is more important than ever. One of the most convenient ways to achieve this is by utilizing...',
       content: `
@@ -33,7 +35,9 @@ export const posts = [
     },
     {
       slug: 'the-convenience-of-cash-on-credit-card-swipe-in-bangalore',
-      title: 'The Convenience of Cash on Credit Card Swipe in Bangalore',
+      title: 'Cash Against Credit Card in Bangalore',
+      h1: 'Cash Against Credit Card in Bangalore',
+      description:'Easy Swipe in Bangalore offers quick cash against your credit card. Fast, secure service to access funds easily and efficiently. Get cash when you need it most.',
       image: '/img/blog2.jpg',
       excerpt: 'In the bustling city of Bangalore, financial emergencies can arise at any moment. Having quick access to cash can make all the difference in...',
       content: `
@@ -56,7 +60,9 @@ export const posts = [
     },
     {
       slug: 'how-to-avoid-scams-when-using-cash-against-credit-card-services',
-      title: 'How to Avoid Scams When Using Cash Against Credit Card Services',
+      title: 'Credit Card to Cash in Bangalore',
+      h1: 'Credit Card to Cash in Bangalore',
+      description:'Easy Swipe in Bangalore provides a hassle-free way to convert your credit card to cash. Fast, secure, and convenient transactions to meet your financial needs.',
       image: '/img/blog3.jpg',
       excerpt: 'Using cash against credit card services can be a convenient way to manage your finances during emergencies. However...',
       content: `
@@ -83,7 +89,9 @@ export const posts = [
     },
     {
       slug: 'how-cash-against-credit-card-services-can-help-in-financial-emergencies',
-      title: 'How Cash Against Credit Card Services Can Help in Financial Emergencies',
+      title: 'How Can I Get Cash From My Credit Card',
+      h1: 'How Can I Get Cash From My Credit Card',
+      description:'Learn how to get cash from your credit card with Easy Swipe. Fast, secure, and easy solutions for accessing funds directly from your credit card. Discover more today!',
       image: '/img/blog4.jpg',
       excerpt: 'Financial emergencies can strike unexpectedly, leaving you in urgent need of funds. Whether it&#39;s a medical emergency, sudden car repair...',
       content: `<p>Financial emergencies can strike unexpectedly, leaving you in urgent need of funds. Whether it&#39;s a medical emergency, sudden car repair, or any unforeseen expense, having access to quick cash is crucial. This is where cash against credit card services come to the rescue. In this blog, we&#39;ll explore how these services can be a lifeline during financial emergencies and how you can utilize them effectively with Easy Swipe.</p>

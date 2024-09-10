@@ -8,7 +8,7 @@ export default function Service() {
                 <meta name="description" content="Send Money From Credit Card To Bank Account Free With Easyswipe. Simple, Secure, And No Fees—transfer Funds Effortlessly Today!" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://www.easyswipe.in/service" />  
+      <link rel="canonical" href="https://www.easyswipe.in/service/" />  
             </Head>
             <section className="custom-header" style={{ background: "url('/img/service-header-image.jpg')" }}></section>
             <h1 className='d-none'>Easy Swipe: Send Money From Credit Card To Bank Account Instantly</h1>

@@ -23,7 +23,7 @@ export default function Contact() {
         <meta name="description" content="Effortlessly cash withdrawal from credit card in Bangalore with EasySwipe. Fast, secure, and convenient for all your cash needs. Explore today!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://www.easyswipe.in/contact" />  
+      <link rel="canonical" href="https://www.easyswipe.in/contact/" />  
       </Head>
       <h1 className='d-none'>Cash Withdrawal From Credit Card In Bangalore</h1>
       <section className="custom-header" style={{ background: "url('/img/contactus-header.jpg')" }}></section>

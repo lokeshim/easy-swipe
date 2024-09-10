@@ -33,8 +33,11 @@ const BlogPost = ({ post }) => {
     <>
         <Head>
             <title>{post.title}</title>
-            <meta name="description" content="Description of the home page" />
+            <meta name="description" content={post.description} />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href={`https://www.easyswipe.in/blogs/${post.slug}`} />
         </Head>
+        <h1 className='d-none'>{post.h1} </h1>
         <section className="custom-header" style={{ background: "url('/img/blog-header.jpg')" }}></section>
         <section className="mb-4" style={{ marginTop: '-120px' }}>
             <div className="container">

@@ -76,8 +76,11 @@ b) Credit card last 4 digits ${formData.cardnumber}
     <>
       <Head>
         <title>Self Declaration | Easyswipe.in</title>
+        <meta name="description" content="With Easy Swipe, self-declaration is simple! Confirm your transaction securely and swiftly. Easy,transparent processing for all your credit card transactions." />
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
         <link href="mail.css" rel="stylesheet" />
+        <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.easyswipe.in/mail/" />  
       </Head>
       <section className="bg-blue-50 py-5">
         <div className="container mx-auto px-4">

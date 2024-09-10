@@ -6,18 +6,18 @@ export default function About() {
     return (
         <>  
             <Head>
-                <title>Cash On Credit Card Swipe In Bangalore | Get Cash From Credit Card</title>
+                <title>Cash On Credit Card Swipe In Bangalore | Credit Card to Cash</title>
                 <meta name="description" content="Get instant cash on credit card swipe in Bangalore with EasySwipe! Fast, secure cash services. Convenient solutions for all your financial needs" />
                 <meta name="robots" content="index, follow" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://www.easyswipe.in/about" />  
+      <link rel="canonical" href="https://www.easyswipe.in/about/" />  
             </Head>
             {/* About breadcrumb area start */}
             <section className="custom-header" style={{ background: "url('/img/About-Us-header.jpg')" }}>
             </section>
             {/* About breadcrumb area end */}
-            <h1 className='d-none'>Your Reliable Source for Quick Cash Against Credit Cards in Bangalore</h1>
+            <h1 className='d-none'>Cash On Credit Card Swipe In Bangalore</h1>
             <section className="mb-4" style={{ marginTop: '-120px' }}>
                 <div className="container">
                     <div className="row d-flex align-content-center justify-content-center">
