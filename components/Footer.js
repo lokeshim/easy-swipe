@@ -31,16 +31,16 @@ const Footer = () => {
                   </div>
                   <p className="fs-5 fw-bold ps-2 footer-heading mb-3 mt-4 mt-lg-0 pt-3 text-center">FOLLOW US</p>
                   <div className="ps-2 text-center">
-                    <Link href="#" className="text-decoration-none text-main pe-2 fs-2">
+                    <Link href="https://www.facebook.com/Cashoncreditcardnearmeinbangalore" className="text-decoration-none text-main pe-2 fs-2" target='_blank'>
                       <i className="fa-brands fa-facebook"></i>
                     </Link>
-                    <Link href="#" className="text-decoration-none text-main px-2 fs-2">
+                    <Link href="https://www.instagram.com/easyswipefinancialservice/" className="text-decoration-none text-main px-2 fs-2" target='_blank'>
                       <i className="fa-brands fa-instagram"></i>
                     </Link>
-                    <Link href="#" className="text-decoration-none text-main px-2 fs-2">
+                    <Link href="https://www.linkedin.com/company/easy-swipe-cash-on-credit-card-in-bangalore/about/" className="text-decoration-none text-main px-2 fs-2" target='_blank'>
                       <i className="fa-brands fa-linkedin"></i>
                     </Link>
-                    <Link href="#" className="text-decoration-none text-main px-2 fs-2">
+                    <Link href="#" className="text-decoration-none text-main px-2 fs-2 d-none" target='_blank'>
                       <i className="fa-brands fa-x-twitter"></i>
                     </Link>
                   </div>

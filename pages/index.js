@@ -12,6 +12,39 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://www.easyswipe.in" />  
+        {/* Schema JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "EasySwipe",
+              "url": "https://www.easyswipe.in",
+              "logo": "https://www.easyswipe.in/img/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/easyswipe",
+                "https://www.twitter.com/easyswipe"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-7090122133",
+                "contactType": "Customer Service",
+                "areaServed": "IN",
+                "availableLanguage": "English"
+              },
+              "description": "EasySwipe provides secure and hassle-free credit card swipe for cash services in Bangalore. Instant transfer of funds from your credit card to your bank account.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Easy Swipe Lane",
+                "addressLocality": "Bengaluru",
+                "addressRegion": "KA",
+                "postalCode": "560001",
+                "addressCountry": "IN"
+              }
+            }),
+          }}
+        />
     </Head>
     <section >
         <h1 className='d-none'>Unlock Instant Financial Flexibility With Spot Credit Card To Cash Services</h1>
