@@ -12,7 +12,7 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://www.easyswipe.in" />  
-        {/* Schema JSON-LD */}
+        {/* Schema JSON-LD for Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -42,6 +42,125 @@ export default function Home() {
                 "postalCode": "560001",
                 "addressCountry": "IN"
               }
+            }),
+          }}
+        />
+
+        {/* Additional Schema for Organization (updated URLs) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Easy Swipe",
+              "alternateName": "Easy Swipe",
+              "url": "https://www.easyswipe.in/",
+              "logo": "https://www.easyswipe.in/img/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/Cashoncreditcardnearmeinbangalore",
+                "https://www.instagram.com/easyswipefinancialservice/",
+                "https://www.linkedin.com/company/easy-swipe-cash-on-credit-card-in-bangalore/about/"
+              ]
+            }),
+          }}
+        />
+
+        {/* Schema JSON-LD for Website */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "Easy Swipe",
+              "url": "https://www.easyswipe.in/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.easyswipe.in/service?search={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          }}
+        />
+
+        {/* Schema JSON-LD for Financial Service */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FinancialService",
+              "name": "Easy Swipe",
+              "image": "https://www.easyswipe.in/img/logo.png",
+              "@id": "",
+              "url": "https://www.easyswipe.in/",
+              "telephone": "(+91) 709 012 2133",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3rd Floor, 1372/C, 32nd E Cross Rd, opp sanjay gandhi hospital, 4th T Block East, Pattabhirama Nagar, Jayanagar",
+                "addressLocality": "Bengaluru",
+                "postalCode": "560041",
+                "addressCountry": "IN"
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.facebook.com/Cashoncreditcardnearmeinbangalore",
+                "https://www.instagram.com/easyswipefinancialservice/",
+                "https://www.linkedin.com/company/easy-swipe-cash-on-credit-card-in-bangalore/about/"
+              ]
+            }),
+          }}
+        />
+
+        {/* Schema JSON-LD for FAQ Page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What documents are required to obtain cash against my credit card?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To access cash against your credit card, you'll need to provide a digital copy of your PAN Card and Aadhar Card. For a detailed explanation of the process, please call us at +91-7090122133. We're here to assist you!"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How can I obtain cash against my credit card?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You have two convenient options to get cash against your credit card: either through our online service or by visiting our office in person. For a complete explanation of the process, call us at +91-7090122133. We're here to guide you!"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is it safe to get cash using my credit card?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, it is safe. Obtaining cash from your credit card is as secure as using it for purchases or bill payments. The cash will be instantly credited to your account. For more details on the process, call us at +91-7090122133. We're here to assist you!"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What does 'cash against a credit card' mean?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It means you can withdraw cash from your credit card's available balance. We simply swipe your card, and the funds are transferred to your account immediately. For a detailed explanation of the process, call us at +91-7090122133. We're here to help!"
+                  }
+                }
+              ]
             }),
           }}
         />
