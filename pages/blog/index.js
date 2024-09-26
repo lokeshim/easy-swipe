@@ -10,6 +10,7 @@ export default function Blog() {
             <Head>
                 <title>Blogs | Credit Card To Cash In Bangalore</title>
                 <meta name="description" content="Convert your credit card to cash in Bangalore effortlessly with EasySwipe. Fast, secure, and convenient solutions tailored for your needs." />
+                <meta name="keywords" content="how to get cash from credit card in Bangalore, credit card to bank transfer, spot cash on credit card in bangalore, credit card swipe for cash , Easy Swipe" />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://www.easyswipe.in/blog" />  
             </Head>

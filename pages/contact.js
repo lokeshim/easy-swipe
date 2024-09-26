@@ -21,6 +21,7 @@ export default function Contact() {
       <Head>
         <title>Contact Us | Cash Withdrawal From Credit Card In Bangalore</title>
         <meta name="description" content="Effortlessly cash withdrawal from credit card in Bangalore with EasySwipe. Fast, secure, and convenient for all your cash needs. Explore today!" />
+        <meta name="keywords" content="Easy Swipe, transfer money from credit card to bank in bangalore, send money using credit card in Bangalore, cash withdrawal from credit card in bangalore, spot cash on credit card swipe in bangalore" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://www.easyswipe.in/contact/" />  

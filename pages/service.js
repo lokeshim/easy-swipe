@@ -6,6 +6,7 @@ export default function Service() {
             <Head>
                 <title>Send Money From Credit Card To Bank Account Instantly</title>
                 <meta name="description" content="Send Money From Credit Card To Bank Account Free With Easyswipe. Simple, Secure, And No Fees—transfer Funds Effortlessly Today!" />
+                <meta name="keywords" content="send money from credit card to bank account free, send money from credit card to bank account, send money from credit card to bank account instantly,transfer money from credit card to bank in bangalore, cash withdrawal from credit card in Bangalore, Easy Swipe" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://www.easyswipe.in/service/" />  

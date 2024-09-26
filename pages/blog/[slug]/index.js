@@ -34,6 +34,7 @@ const BlogPost = ({ post }) => {
         <Head>
             <title>{post.title}</title>
             <meta name="description" content={post.description} />
+            <meta name="keywords" content={post.keywords} />
             <meta name="robots" content="index, follow" />
             <link rel="canonical" href={`https://www.easyswipe.in/blog/${post.slug}`} />
         </Head>

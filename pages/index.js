@@ -9,6 +9,7 @@ export default function Home() {
     <Head>
       <title>Credit Card Swipe For Cash | Send Money With Credit Card</title>
       <meta name="description" content="Convert your credit limit into instant cash with EasySwipe. Quick, secure, and hassle-free credit card swipe for cash service" />
+      <meta name="keywords" content="credit card swipe for cash  , send money with credit card in Bangalore, transferring money from credit card to bank account , cash withdrawal from credit card in bangalore, spot cash on credit card swipe in bangalore, Easy Swipe" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://www.easyswipe.in" />  
