@@ -23,7 +23,7 @@
   --border: #374151;
   --ring: #1d4ed8;
 }
-
+.mybg {background: #f3f4f6 !important;}
 .card {
   background-color: var(--background);
   border-radius: 8px;
@@ -310,21 +310,21 @@ input:checked + .toggle-slider:before {
   transform: translateX(26px);
 }
 
-.toast {
+.toast,.toast-message {
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: var(--background);
-  color: var(--foreground);
+  color: #000;
   padding: 10px 20px;
   border-radius: 4px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   display: none;
 }
-.dark p,
-.dark .tabs .tab,
-.dark .toggle-label {
+.dark .card p,
+.dark .card .tabs .tab,
+.dark .card .toggle-label {
   color: #fff !important;
 }
 .dark .tabs .active {
@@ -352,8 +352,8 @@ input:checked + .toggle-slider:before {
   border-color: #007bff; /* Active button border color */
 }
 body .card .input-group {display:  block !important;}
-.dark .input-group {display:  block !important;}
-.dark .percentage-button  {background: transparent;}
+.dark  .card .input-group {display:  block !important;}
+.dark  .card .percentage-button  {background: transparent;}
 @media (max-width: 600px) {
   .percentage-buttons {
     flex-wrap: wrap;
@@ -363,3 +363,4 @@ body .card .input-group {display:  block !important;}
     flex-basis: calc(50% - 5px);
   }
 }
+.mydiv {position: absolute;right:3%;bottom:00px;display: block;padding:10px 20px}

@@ -1,4 +1,3 @@
-// pages/about.js
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
@@ -11,7 +10,13 @@ export default function About() {
     charges: 0,
     netAmount: 0,
   });
-  const [activeTab, setActiveTab] = useState("calculator"); // State for active tab
+  const [animatedResult, setAnimatedResult] = useState({
+    selectedAmount: 0,
+    charges: 0,
+    netAmount: 0,
+  });
+  const [activeTab, setActiveTab] = useState("calculator");
+  const [toastMessage, setToastMessage] = useState("");
 
   useEffect(() => {
     document.body.classList.toggle("dark", isDarkMode);
@@ -19,6 +24,7 @@ export default function About() {
 
   const handlePercentageChange = (percentage) => {
     setSelectedPercentage(percentage);
+    setToastMessage(""); // Reset toast message when changing percentage
   };
 
   const calculateCharges = () => {
@@ -26,6 +32,8 @@ export default function About() {
     const netAmount = swipeAmount - charges;
     setResult({ charges, netAmount });
     addToHistory(swipeAmount, selectedPercentage, charges, netAmount);
+    animateResult(swipeAmount, charges, netAmount);
+    showToast(`Calculation complete. Net amount: ₹${netAmount.toFixed(2)}`);
   };
 
   const addToHistory = (amount, percentage, charges, net) => {
@@ -36,9 +44,55 @@ export default function About() {
     setCalculationHistory(newHistory.slice(0, 5));
   };
 
+  const showToast = (message) => {
+    setToastMessage(message);
+    setTimeout(() => {
+      setToastMessage("");
+    }, 55000); // Duration of the toast message
+  };
+
+  const animateResult = (swipeAmount, charges, netAmount) => {
+    let selectedCount = 0;
+    let chargesCount = 0;
+    let netCount = 0;
+
+    const chargesInterval = Math.ceil(charges / 100); // Change the speed as needed
+    const netInterval = Math.ceil(netAmount / 100); // Change the speed as needed
+    const selectedInterval = Math.ceil(swipeAmount / 100); // Change the speed as needed
+
+    const selectedTimer = setInterval(() => {
+      if (selectedCount < swipeAmount) {
+        selectedCount += selectedInterval;
+        if (selectedCount > swipeAmount) selectedCount = swipeAmount; // Prevent overshoot
+        setAnimatedResult((prev) => ({ ...prev, selectedAmount: selectedCount }));
+      } else {
+        clearInterval(selectedTimer);
+      }
+    }, 10); // Adjust the timing for smoother animation
+
+    const chargesTimer = setInterval(() => {
+      if (chargesCount < charges) {
+        chargesCount += chargesInterval;
+        if (chargesCount > charges) chargesCount = charges; // Prevent overshoot
+        setAnimatedResult((prev) => ({ ...prev, charges: chargesCount }));
+      } else {
+        clearInterval(chargesTimer);
+      }
+    }, 10); // Adjust the timing for smoother animation
+
+    const netTimer = setInterval(() => {
+      if (netCount < netAmount) {
+        netCount += netInterval;
+        if (netCount > netAmount) netCount = netAmount; // Prevent overshoot
+        setAnimatedResult((prev) => ({ ...prev, netAmount: netCount }));
+      } else {
+        clearInterval(netTimer);
+      }
+    }, 10); // Adjust the timing for smoother animation
+  };
+
   return (
     <>
-      {/* SEO Head Section */}
       <Head>
         <title>Credit Card Cash Withdrawal Calculator | EasySwipe</title>
         <meta
@@ -71,16 +125,13 @@ export default function About() {
         />
       </Head>
 
-      {/* About breadcrumb area start */}
       <section
         className="custom-header d-none"
         style={{ background: "url('/img/About-Us-header.jpg')" }}
       ></section>
-      {/* About breadcrumb area end */}
       <h1 className="d-none">CREDIT CARD CASH WITHDRAWAL CALCULATOR</h1>
-
-      {/* Credit Card Cash Withdrawal Calculator Section */}
-      <div className="container py-5 mt-3">
+<section className="mybg">
+      <div className="container py-5 mt-3 ">
         <div className="col-md-6 px-3 d-block mx-auto">
           <div className="card">
             <div className="card-header">
@@ -121,7 +172,6 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Conditional Rendering Based on Active Tab */}
               {activeTab === "calculator" && (
                 <>
                   <div className="input-group">
@@ -162,7 +212,6 @@ export default function About() {
                 </>
               )}
 
-              {/* History Tab */}
               {activeTab === "history" && (
                 <div className="card mt-3">
                   <div className="card-header">
@@ -198,7 +247,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* New Section for Calculation Result */}
           {result.netAmount > 0 && (
             <div className="result-section mt-4">
               <div className="card">
@@ -209,7 +257,7 @@ export default function About() {
                   <div className="result-item">
                     <span className="result-label">Selected Amount:</span>
                     <span className="result-value">
-                      ₹{swipeAmount.toFixed(2)}
+                      ₹{animatedResult.selectedAmount.toFixed(2)}
                     </span>
                   </div>
                   <div className="result-item">
@@ -217,40 +265,30 @@ export default function About() {
                     <span className="result-value">{selectedPercentage}%</span>
                   </div>
                   <div className="result-item">
-                    <span className="result-label">Charges Amount:</span>
+                    <span className="result-label">Total Charges:</span>
                     <span className="result-value">
-                      ₹{result.charges.toFixed(2)}
+                      ₹{animatedResult.charges.toFixed(2)}
                     </span>
                   </div>
                   <div className="result-item">
-                    <span className="result-label">Net Amount to Transfer:</span>
-                    <span className="result-value net-amount">
-                      ₹{result.netAmount.toFixed(2)}
+                    <span className="result-label">Net Amount:</span>
+                    <span className="result-value">
+                      ₹{animatedResult.netAmount.toFixed(2)}
                     </span>
                   </div>
-                  <button className="transfer-button btn bg-success my-3 w-100">
-                    Transfer to Bank Account
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </button>
                 </div>
               </div>
             </div>
           )}
+
+{toastMessage && ( // Show toast every time a calculation is performed
+            <div className="mydiv bg-white">
+              {toastMessage}
+            </div>
+          )}
         </div>
       </div>
+      </section>
     </>
   );
 }
