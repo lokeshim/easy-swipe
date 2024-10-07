@@ -8,29 +8,33 @@ import '../styles/style.css'; // Import global CSS
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CommonModal from '../components/CommonModal';
+import { useRouter } from 'next/router';
 
-function MyApp({ Component, pageProps }) {  
-  useEffect(() => {
-    // Initialize AOS
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once while scrolling down
-      mirror: false, // Whether elements should animate out while scrolling past them
-    });
-    import('bootstrap/dist/js/bootstrap.bundle.min.js').then((Bootstrap) => {
-      // Initialize Bootstrap carousel (if necessary)
-    });
-  }, []);
-  return (
-    <>
-      <Header />      
-      <main>
-        <Component {...pageProps} />
-      </main>
-      <Footer />
-      <CommonModal />
-    </>
-  );
+function MyApp({ Component, pageProps }) {
+    const router = useRouter();
+
+    useEffect(() => {
+        AOS.init({
+            duration: 800, // Duration of animations
+            once: true, // Whether animation should happen only once
+        });
+    }, []);
+
+    // Conditionally import the calculator CSS
+    useEffect(() => {
+        if (router.pathname === '/calculator') {
+            import('../styles/calc.css');
+        }
+    }, [router.pathname]);
+
+    return (
+        <>
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
+            <CommonModal />
+        </>
+    );
 }
 
 export default MyApp;
