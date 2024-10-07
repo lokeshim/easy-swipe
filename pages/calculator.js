@@ -48,7 +48,7 @@ export default function About() {
     setToastMessage(message);
     setTimeout(() => {
       setToastMessage("");
-    }, 55000); // Duration of the toast message
+    }, 5000); // Duration of the toast message
   };
 
   const animateResult = (swipeAmount, charges, netAmount) => {
@@ -116,12 +116,12 @@ export default function About() {
         />
         <meta
           property="og:url"
-          content="https://www.easyswipe.in/credit-card-cash-withdrawal-calculator/"
+          content="https://www.easyswipe.in/calculator/"
         />
         <meta property="og:type" content="website" />
         <link
           rel="canonical"
-          href="https://www.easyswipe.in/credit-card-cash-withdrawal-calculator/"
+          href="https://www.easyswipe.in/calculator/"
         />
       </Head>
 
@@ -131,8 +131,8 @@ export default function About() {
       ></section>
       <h1 className="d-none">CREDIT CARD CASH WITHDRAWAL CALCULATOR</h1>
 <section className="mybg">
-      <div className="container py-5 mt-3 ">
-        <div className="col-md-6 px-3 d-block mx-auto">
+      <div className="container py-5  ">
+        <div className="col-md-6 pt-3 px-3 d-block mx-auto">
           <div className="card">
             <div className="card-header">
               <h1 className="card-title mb-2">
@@ -275,7 +275,16 @@ export default function About() {
                     <span className="result-value">
                       ₹{animatedResult.netAmount.toFixed(2)}
                     </span>
+
+                 
                   </div>
+                  <button class="transfer-button btn btn-success w-100">
+                    Transfer to Bank Account
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
                 </div>
               </div>
             </div>
