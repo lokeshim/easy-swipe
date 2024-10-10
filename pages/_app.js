@@ -25,6 +25,9 @@ function MyApp({ Component, pageProps }) {
         if (router.pathname === '/calculator') {
             import('../styles/calc.css');
         }
+         if (typeof document !== 'undefined') {
+            require('bootstrap/dist/js/bootstrap.bundle.min.js');
+        }
     }, [router.pathname]);
 
     return (
