@@ -170,7 +170,7 @@ export default function Home() {
         <h1 className='d-none'>Unlock Instant Financial Flexibility With Spot Credit Card To Cash Services</h1>
       
       <div className='d-md-block d-none'>
-        <Image src="/img/banner.jpg" className="w-100 mybanner" alt="Easy Swipe" width={1920} height={827} />
+        <Image src="/img/banner.webp" className="w-100 mybanner" alt="Easy Swipe" width={1920} height={827}   priority={true}  />
         <a data-bs-target="#exampleModal1" data-bs-toggle="modal" title="" style={{
                 position: 'absolute',
                 left: '51%',
@@ -181,8 +181,17 @@ export default function Home() {
                 cursor: 'pointer',
               }}></a>
       </div>
-      <div className='d-md-none d-block'>
-        <Image src="/img/m-banner.jpg" className="w-100 mybanner" alt="Easy Swipe" width={390} height={684} />
+      <div className='d-md-none d-block '>
+    
+
+      <Image 
+  src="/img/m-banner.webp" 
+  className="w-100 mybanner" 
+  alt="Easy Swipe" 
+  width={412} 
+  height={684} 
+  priority={true} 
+/>
         <a data-bs-target="#exampleModal1" data-bs-toggle="modal" title="" style={{
                 position: 'absolute',
                 left: '33%',
@@ -195,7 +204,7 @@ export default function Home() {
         </div>
     </section>
     <Bank />
-    <section className="same-gap bg-white">
+    <section className="same-gap bg-white mysection">
         <div className="container">
             <div className="row d-flex align-content-center justify-content-center">
                 <div className="title text-center">
@@ -223,7 +232,7 @@ export default function Home() {
         </div>
 
     </section>
-    <section className="project-info-section same-gap mysec" data-aos="fade-up" data-bg-color="#F6EBE7" style={{ backgroundColor: 'rgb(246, 235, 231)' }}>
+    <section className="project-info-section same-gap mysec mysection" data-aos="fade-up" data-bg-color="#F6EBE7" style={{ backgroundColor: 'rgb(246, 235, 231)' }}>
         <div className="container">
             <div className="title text-center">
                 <h2 className="text-main mb-0">Why Choose Easy Swipe?
@@ -305,7 +314,7 @@ export default function Home() {
         </div>
     </section>
 
-    <section className="project-info-section same-gap mysec" data-bg-color="#fff" data-aos="fade-right" data-aos-duration="1500">
+    <section className="project-info-section same-gap mysec mysection" data-bg-color="#fff" data-aos="fade-right" data-aos-duration="1500">
         <div className="container">
             <div className="title text-center">
                 <h2 className="text-main mb-0">How it Works ? </h2>
@@ -330,7 +339,7 @@ export default function Home() {
             </div>
         </div>
     </section>
-    <section className="section same-gap testimonal mysec" style={{ backgroundColor: "#F6EBE7" }} data-aos="fade-right" data-aos-duration="1500">
+    <section className="section same-gap testimonal mysec mysection" style={{ backgroundColor: "#F6EBE7" }} data-aos="fade-right" data-aos-duration="1500">
         <div className="container">
             <div className="row py-4">
                 <div className="title text-center">
@@ -386,7 +395,7 @@ export default function Home() {
             </div>
         </div>
     </section>
-    <section className="same-gap mysec" style={{ backgroundColor: '#fff', backgroundImage: 'url(/img/bg.png)', backgroundSize: 'cover' }} data-aos="fade-right" data-aos-duration="1500">
+    <section className="same-gap mysec mysection" style={{ backgroundColor: '#fff', backgroundImage: 'url(/img/bg.png)', backgroundSize: 'cover' }} data-aos="fade-right" data-aos-duration="1500">
         <div className="container">
             <div className="row">
                 <div className="title text-center">

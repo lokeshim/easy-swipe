@@ -42,7 +42,7 @@ export default function Service() {
                     </div>
                 </div>
             </section>
-            <section className="same-gap" style={{ backgroundColor: '#F6EBE7' }}>
+            <section className="same-gap mysection" style={{ backgroundColor: '#F6EBE7' }}>
                 <div className="container-fluid">
                     <div className="row p-0">
                         <div className="col-md-4 d-flex justify-content-center align-items-center">
@@ -112,7 +112,7 @@ export default function Service() {
                     </div>
                 </div>
             </section>
-            <section className="project-info-section same-gap" style={{ backgroundColor: '#fff' }}>
+            <section className="project-info-section same-gap mysection" style={{ backgroundColor: '#fff' }}>
                 <div className="container">
                     <div className="title text-center">
                         <h2 className="text-main mb-0">Credit Card to Cash</h2>

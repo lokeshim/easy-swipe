@@ -20,7 +20,7 @@ const Bank = () => {
   ];
 
   return (
-    <section className="py-3 bg-light">
+    <section className="py-3 bg-light mysection">
       <div className="container">
         <div className="row">
           <div className="col-md-12">

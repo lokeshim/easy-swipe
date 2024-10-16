@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import AOS from 'aos';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../styles/style.css'; // Import global CSS
+//import '../styles/style.css'; // Import global CSS
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CommonModal from '../components/CommonModal';
@@ -28,6 +28,11 @@ function MyApp({ Component, pageProps }) {
          if (typeof document !== 'undefined') {
             require('bootstrap/dist/js/bootstrap.bundle.min.js');
         }
+          // Conditionally load the global styles (footer or any other page/component)
+          const footerElement = document.querySelector('footer');
+          if (footerElement) {
+              import('../styles/style.css'); // Lazy load the global CSS
+          }
     }, [router.pathname]);
 
     return (

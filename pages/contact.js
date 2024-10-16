@@ -148,7 +148,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="">
+      <section className="mysection">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 p-0">
