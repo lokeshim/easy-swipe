@@ -1,9 +1,12 @@
-import Link from 'next/link';
+import Link from 'next/link'; 
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const Footer = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const router = useRouter();
 
   const onSubmit = (data) => {
     const { name, email, phone, message } = data;
@@ -18,12 +21,38 @@ const Footer = () => {
     reset();
   };
 
+  useEffect(() => {
+    const sections = document.querySelectorAll(".mysection");
+
+    function revealSections() {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight * 0.75) {
+          section.classList.add("visible");
+        } else {
+          section.classList.remove("visible");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealSections);
+
+    // Trigger initial check on page load
+    revealSections();
+
+    return () => {
+      window.removeEventListener("scroll", revealSections);
+    };
+  }, [router.pathname]);  // Add router.pathname to the dependency array
+
   return (
     <footer className="mysec wow slideInUp" data-aos="fade-up" data-aos-duration="1500">
       <div className="container footer">
         <div className="row">
           <div className="col-md-11 d-block mx-auto">
-            <div className="row border-bottom py-md-4">
+            <div className="row border-bottom py-md-4 section">
               <div className="col-md-3 ps-3 mb-3 d-flex align-items-center justify-content-center">
                 <div className="content">
                   <div className="ftr-logo">
@@ -40,14 +69,11 @@ const Footer = () => {
                     <Link href="https://www.linkedin.com/company/easy-swipe-cash-on-credit-card-in-bangalore/about/" className="text-decoration-none text-main px-2 fs-2" target='_blank'>
                       <i className="fa-brands fa-linkedin"></i>
                     </Link>
-                    <Link href="#" className="text-decoration-none text-main px-2 fs-2 d-none" target='_blank'>
-                      <i className="fa-brands fa-x-twitter"></i>
-                    </Link>
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-3 ps-3 mb-3 d-flex align-content-center justify-content-center">
+              <div className="col-md-3 ps-3 mb-3 d-flex align-content-center justify-content-center section">
                 <div>
                   <p className="fs-4 fw-bold">Contact Us</p>
                   <ul className="ps-lg-4 ps-0 text-center d-inline mt-4">
@@ -65,7 +91,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-md-2 ps-3 text-left mb-3 d-flex align-content-center justify-content-center">
+              <div className="col-md-2 ps-3 text-left mb-3 d-flex align-content-center justify-content-center section">
                 <div className="content">
                   <p className="fs-4 fw-bold">Quick Links</p>
                   <ul className="ps-lg-4 ps-0 text-center d-inline">
@@ -88,7 +114,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="col-md-4 ps-3 text-left mb-3 d-flex justify-content-center align-items-center">
+              <div className="col-md-4 ps-3 text-left mb-3 d-flex justify-content-center align-items-center section">
                 <div className="content">
                   <p className="mb-3 fs-4 fw-bold text-main">Enquire Now</p>
                   <form id="footer-form" onSubmit={handleSubmit(onSubmit)} style={{ paddingTop: '10px' }}>
