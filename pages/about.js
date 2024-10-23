@@ -6,7 +6,7 @@ export default function About() {
     return (
         <>  
             <Head>
-                <title>Cash On Credit Card Swipe In Bangalore | Credit Card to Cash</title>
+                <title>Cash On Credit Card Swipe In Bangalore | Get Cash on Credit card</title>
                 <meta name="description" content="Get instant cash on credit card swipe in Bangalore with EasySwipe! Fast, secure cash services. Convenient solutions for all your financial needs" />
                 <meta name="keywords" content="get cash from credit card  in bangalore, transfer money from credit card to bank in bangalore, add money to bank account from credit card, credit card to cash in bangalore, Cash on credit card instantly in bangalore, credit card swipe for cash in bangalore" />
                 <meta name="robots" content="index, follow" />

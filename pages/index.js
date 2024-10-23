@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Credit Card Swipe For Cash | Send Money With Credit Card</title>
-      <meta name="description" content="Convert your credit limit into instant cash with EasySwipe. Quick, secure, and hassle-free credit card swipe for cash service" />
+      <title>Cash on Credit Cards in Bangalore | Credit Card to Cash in Bangalore</title>
+      <meta name="description" content="Easily convert your credit card to cash in Bangalore with Easy Swipe. Quick, secure, and hassle-free transactions at your fingertips!" />
       <meta name="keywords" content="credit card swipe for cash  , send money with credit card in Bangalore, transferring money from credit card to bank account , cash withdrawal from credit card in bangalore, spot cash on credit card swipe in bangalore, Easy Swipe" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow" />
@@ -202,23 +202,57 @@ export default function Home() {
                     <h2 className="text-main">About Easy Swipe </h2>
                 </div>
 
-                <div className="col-md-6 text-center ">
+                <div className="col-md-6 text-center d-flex justify-content-center ">
                     <Image src="/img/About-C2C.jpg" data-aos="fade-right" data-aos-duration="1500" alt="About" className="img-fluid mb-2 p-3" width={705} height={429} />
                 </div>
                 <div className="col-md-6  d-flex align-content-center align-items-center" data-aos="fade-left" data-aos-duration="1500">
                     <div>
                         <div className="title text-left">
-                            <p className="mb-3 fs-3 fw-bold text-main"> Unlock Instant Financial Flexibility with Spot Cash Against Credit Card Services</p>
+                            <p className="mb-3 fs-4 fw-bold text-main">EASY CASH AGAINST CREDIT CARD IN BANGALORE WITH EASY SWIPE!</p>
                         </div>
 
-                        <p className="text-justify lh-lg fs65">Are you in Bengaluru and need immediate cash? Look no further! At Easy Swipe, we specialize in providing fast and secure spot cash against credit cards, offering you an effortless solution to your financial needs. With our &ldquo;Credit Card Swipe Cash&ldquo; service, you can transfer money from your credit card to your bank account instantly.
+                        <p className="text-justify  fs65">Making large purchases, managing unexpected expenses or simply having funds for personal
+and business needs handy? In a fast-paced city like Bangalore, it is a prevalent concern. The
+solution is Easy Swipe - providing a Credit card to Cash services in Bangalore!
                         </p>
-                        <p className="text-justify lh-lg fs65">
-                            Don&apos;t let financial emergencies catch you off guard. With Easy Swipe, getting cash from your credit card with one easy swipe has never been easier. Contact us today to find out how we can assist you in accessing instant cash when you need it most.
+                        <p className="text-justify  fs65">
+                           Opting for a Cash against Credit Card Swipe provides an array of advantages that cater to your
+financial needs! Turning credit into cash is a smart financial strategy that offers convenience
+and flexibility. Unlock hassle-free access to funds without needing any paperwork or approvals.
                         </p>
+                            <p className="text-justify  fs65">Whether it is for unexpected expenses, emergencies or day-to-day spending, it empowers you
+with the liquidity you need at your fingertips. With minimal paperwork and a competitive fee,
+the seamless process provides instant approval and cash withdrawal right at the ATM.
+Additionally, it secures you from having to tap into your savings, ensuring your financial
+security.</p>
+                        
                     </div>
+                       
 
                 </div>
+                 <div className="col-md-12  ">
+              
+                         <p className="text-justify  fs65 fw-bold">Why Choose Easy Swipe - Cash Against Credit Card?</p>
+                          <p className="text-justify  fs65 ps-3">QUICK CASH ACCESS – Receive instant cash on the spot against your credit card, be it in
+any area of Bangalore. Our credit card swipe for cash service provides immediate cash
+with minimal hassle. Convert your credit card limit into instant cash through our simple
+swipe process!</p>
+  <p className="text-justify  fs65 ps-3">CONVINIENT AND SECURE TRANSACTION - Experience effortless cash withdrawal
+through our secure process. In credit card to cash services in Bangalore, we provide a
+fast and reliable way of withdrawing cash.</p>
+    <p className="text-justify  fs65 ps-3">TRANSFER MONEY FROM CARD TO ACCOUNT - Effortlessly transfer money from your
+credit card to your bank account with minimal paperwork. Whether you transfer a
+thousand or ten, it is a flexible solution for your requirements.</p>
+   <p className="text-justify  fs65 ps-3">
+   FLEXIBLE REPAYMENT - Take advantage of our convenient repayment plans designed to
+suit your financial conditions. We offer manageable terms that enable you to repay the
+borrowed amount.
+   </p>
+   <p className="text-justify  fs65 ">With Easy Swipe, financial flexibility is right at hand. Our seamless and effective services ensure
+that unexpected expenses are no longer a disruption in your comfortable life. Whether you
+make a major purchase, meet an emergency or manage your daily expenses, we provide the
+financial liquidity you need.</p>
+                        </div>
             </div>
         </div>
 
