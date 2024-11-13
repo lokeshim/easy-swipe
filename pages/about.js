@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 
 export default function About() {
-<<<<<<< HEAD
     return (
         <>  
             <Head>
@@ -43,71 +42,6 @@ export default function About() {
                     </div>
                 </div>
             </section>
-=======
-  return (
-    <>
-      <Head>
-        <title>
-          Cash On Credit Card Swipe In Bangalore | Credit Card to Cash
-        </title>
-        <meta
-          name="description"
-          content="Get instant cash on credit card swipe in Bangalore with EasySwipe! Fast, secure cash services. Convenient solutions for all your financial needs"
-        />
-        <meta
-          name="keywords"
-          content="get cash from credit card  in bangalore, transfer money from credit card to bank in bangalore, add money to bank account from credit card, credit card to cash in bangalore, Cash on credit card instantly in bangalore, credit card swipe for cash in bangalore"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.easyswipe.in/about/" />
-      </Head>
-      {/* About breadcrumb area start */}
-      <section
-        className="custom-header"
-        style={{ background: "url('/img/About-Us-header.jpg')" }}
-      ></section>
-      {/* About breadcrumb area end */}
-      <h1 className="d-none">Cash On Credit Card Swipe In Bangalore</h1>
-      <section className="mb-4 " style={{ marginTop: "-120px" }}>
-        <div className="container">
-          <div className="row d-flex align-content-center justify-content-center">
-            <div className="title text-center">
-              <h2 className="text-main">About Easy Swipe</h2>
-            </div>
-            <div className="row d-flex align-items-center text-justify my-3">
-              <div className="col-lg-6 col-12" data-aos="fade-right">
-                <Image
-                  src="/img/card.jpg"
-                  className="img-fluid mb-3"
-                  alt="Card"
-                  width={612}
-                  height={408}
-                />
-              </div>
-              <div className="col-lg-6 col-12" data-aos="fade-left">
-                <p className="text-dark fs-3 fw-bold text-main">
-                  Your Reliable Source for Quick Cash Against Credit Cards in
-                  Bangalore
-                </p>
-                <h5 className="fs-5 fw-bold text-main">
-                  Instant Money Transfer Services with Easy Swipe
-                </h5>
-                <p className="lh-lg">
-                  In today&apos;s fast-paced world, managing finances has never
-                  been easier thanks to online money transfer services. The
-                  traditional days of lengthy bank visits and cumbersome
-                  paperwork are now behind us. With Easy Swipe, you can
-                  experience the convenience and security of instant online
-                  money transfer services.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
->>>>>>> 20081cda60d2ebb70769821f59deaf41f206e517
 
       <section
         className="section same-gap testimonal mysection"
