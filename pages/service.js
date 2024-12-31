@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 export default function Service() {
+    const baseURL = "https://www.easyswipe.in/";
     return (
         <>
             <Head>
@@ -67,33 +68,45 @@ export default function Service() {
                                     {[
                                     {
                                     src: '/img/Transfer-Money-from-Credit-Card.jpg',
+                                    title:'Transfer Money from Credit Card to Bank Account Online',
+                                    link:`${baseURL}transfer-money-from-credit-card-to-bank-account-online`,
                                     text: 'Transfer Money from Credit Card to Bank Account Online: Seamlessly move funds from your credit card to your bank account with our secure online service. Whether you need to transfer ₹1,000 or ₹10,000, we make the process quick and hassle-free.',
                                     },
                                     {
                                     src: '/img/Credit-Card-Swipe-for-Cash.jpg',
+                                    title:'Credit Card Swipe for Cash',
+                                    link:`${baseURL}credit-card-swipe-for-cash`,
                                     text: 'Credit Card Swipe for Cash: Convert your credit card limit into instant cash through our simple swipe process. This service is ideal for immediate financial needs, offering a quick way to access cash without any delays.',
                                     },
                                     {
                                     src: '/img/Cash-Withdrawal-from-Credit-Card.jpg',
+                                    title:'Cash Withdrawal from Credit Card in Bangalore',
+                                    link:`${baseURL}cash-withdrawal-from-credit-card-in-bangalore`,
                                     text: 'Cash Withdrawal from Credit Card in Bangalore: Access cash directly from your credit card with our efficient withdrawal service. Available across Bangalore, this option ensures you can get the funds you need quickly and securely.',
                                     },
                                     {
                                     src: '/img/Spot-Cash-Against-Credit-Card-in-Bangalore.jpg',
+                                    title:'Spot Cash Against Credit Card in Bangalore',
+                                    link:`${baseURL}spot-cash-against-credit-card-in-bangalore`,
                                     text: 'Spot Cash Against Credit Card in Bangalore: Obtain spot cash against your credit card limit with ease. Our service provides a fast and reliable way to get cash when you\'re in a pinch, available throughout Bangalore.',
                                     },
                                     {
                                     src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
+                                    title:`${baseURL}Send Money to Bank Account from Credit Card`,
+                                    link:'send-money-to-bank-account-from-credit-card',
                                     text: 'Send Money to Bank Account from Credit Card: Transfer money from your credit card to your bank account effortlessly. Whether you need to send ₹1,000 or ₹100,000, we offer flexible options to suit your financial needs.',
                                     },
                                     {
                                     src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
+                                    title:'Flexible Repayment Options',
+                                    link:'#',
                                     text: 'Flexible Repayment Options: Enjoy the convenience of flexible repayment plans tailored to fit your financial situation. We provide manageable repayment terms that allow you to pay back the borrowed amount without straining your budget.',
                                     },
                                     ].map((item, index) => (
                                     <div className="col-md-4 mb-3" key={index}>
                                         <div className="services-item shine-animate-item bg-white">
                                             <div className="services-thumb">
-                                                <a className="shine-animate" href="#">
+                                                <a className="shine-animate" href={item.link}>
                                                     <Image src={item.src} alt="" width={392} height={271} />
                                                 </a>
                                             </div>
@@ -101,6 +114,7 @@ export default function Service() {
                                                 <div className="icon">
                                                     <i className="fa-solid fa-barcode"></i>
                                                 </div>
+                                                <h4 class="title"><a href={item.link}>{item.title}</a></h4>
                                                 <p>{item.text}</p>
                                             </div>
                                         </div>

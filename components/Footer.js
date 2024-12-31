@@ -1,12 +1,17 @@
 import Link from 'next/link'; 
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 const Footer = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const router = useRouter();
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleFooter = () => {
+    setShowMore(!showMore);
+  };
 
   const onSubmit = (data) => {
     const { name, email, phone, message } = data;
@@ -45,14 +50,14 @@ const Footer = () => {
     return () => {
       window.removeEventListener("scroll", revealSections);
     };
-  }, [router.pathname]);  // Add router.pathname to the dependency array
+  }, [router.pathname]);
 
   return (
     <footer className="mysec wow slideInUp" data-aos="fade-up" data-aos-duration="1500">
       <div className="container footer">
         <div className="row">
           <div className="col-md-11 d-block mx-auto">
-            <div className="row border-bottom py-md-4 section">
+            <div className="row border-bottom pt-md-4 pb-0 section">
               <div className="col-md-3 ps-3 mb-3 d-flex align-items-center justify-content-center">
                 <div className="content">
                   <div className="ftr-logo">
@@ -72,7 +77,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-
+              
               <div className="col-md-3 ps-3 mb-3 d-flex align-content-center justify-content-center section">
                 <div>
                   <p className="fs-4 fw-bold">Contact Us</p>
@@ -182,7 +187,105 @@ const Footer = () => {
                 </div>
               </div>
 
+              {showMore && (
+                <div className="row mt-4">
+                  <div className="col-md-12">
+                    <p className="fs-6 ">
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Credit cards swipe to get cash in bangalore
+                    </Link>
+                   &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash against credit card swipe services in bangalore
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Get cash from credit card swipe in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Credit card to cash services in Bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Get Cash on Credit cards in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash against credit cards in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Credit cards to cash in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash on credit cards in Bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash on credit card services bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Credit card to cash withdrawal in Bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Swipe credit card for cash in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Instant cash withdrawal against credit card swipe bangalore
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Instant cash against credit card swipe in bangalore
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Get cash against credit card swipe in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Swipe credit card and get cash in bangalore
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash withdrawal against credit card swipe in bangalore
+
+                    </Link>
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash on credit card swipe bangalore
+
+
+                    </Link>
+
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash withdrawal from credit card swipe in bangalore
+
+
+                    </Link>
+
+                    &nbsp; |    &nbsp;
+                    <Link href="https://www.easyswipe.in/" className="text-decoration-none text-main fs-6">Cash on credit card swipe in bangalore
+
+                    </Link>
+
+                   
+
+
+                    </p>
+                    
+                  </div>
+                </div>
+              )}
+              <div className='col-md-12'>
+              <button 
+              id="morefooter" 
+              className="border rounded-top-pill btn btn-danger  px-5 py-3 text-white mt-4" 
+              onClick={toggleFooter}
+            >
+              {showMore ? 'Less Footer' : 'More Footer'}
+            </button>
+              </div>
+                
             </div>
+          
           </div>
         </div>
       </div>
