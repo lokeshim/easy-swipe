@@ -92,8 +92,8 @@ export default function Service() {
                                     },
                                     {
                                     src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
-                                    title:`${baseURL}Send Money to Bank Account from Credit Card`,
-                                    link:'send-money-to-bank-account-from-credit-card',
+                                    title:'Send Money to Bank Account from Credit Card',
+                                    link:`${baseURL}send-money-to-bank-account-from-credit-card`,
                                     text: 'Send Money to Bank Account from Credit Card: Transfer money from your credit card to your bank account effortlessly. Whether you need to send ₹1,000 or ₹100,000, we offer flexible options to suit your financial needs.',
                                     },
                                     {
